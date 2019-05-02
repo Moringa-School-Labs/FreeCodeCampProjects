@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Tribute Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<!--Bootsrap 3 CDN-->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  	
+  	<!--Custom css-->
+  	<style>
+		body{
+			font-family: Montserrat;
+		}
+		/*Container styling*/
+		.container{
+			background-color: #EAF2F8;
+			margin-top: 10px;
+			border-radius: 5px;
+		}
+		#img-div{
+			background-color: #EAF2F8;
+			border-radius: 5px;
+			padding-bottom: 5px;
+		}
+		.list-group{
+			margin: auto;
+		}
+		p{
+			font-size: 14px;
+		}	
+  	</style>
+ 
+</head>
+<body>
+	<!--Main container-->
+	<div id="main" class="container text-center">
+		<div id="title">
+			<h2>Mzee Jomo Kenytatta</h2>
+			<p>The Man of the People</p>
+		</div><br>
+
+		<div id="img-div">
+			<img src="images/img.jpg" id="image" class="img-responsive img-rounded" alt="Mzee Jomo Kenyatta" style="max-width: 100%; height: auto; margin: auto;"><br>
+			<div id="img-caption" class="caption">
+				<p>Jomo Kenyatta was a Kenyan anti-colonial activist and politician who governed Kenya as the first President.</p>
+			</div>
+		</div><br>
+
+		<div id="tribute-info">
+			<h4><b>Here is a time line of Mzee Jomo Kenyatta:</b></h4>
+			<ul class="list-group text-left" style="width: 70%;">
+  				<li class="list-group-item"><b>1891</b> - Kenyatta was born in the village of Nginda.</li>
+  				<li class="list-group-item"><b>1909</b> - Enrolled as a pupil at the Church of Scotland Mission (CSM) at Thogoto.</li>
+  				<li class="list-group-item"><b>1914</b> - Kenyatta moved to Thika, where he worked for an engineering firm run by Briton John Cook.</li>
+  				<li class="list-group-item"><b>1922</b> - He joined Kikuyu Central Association.</li>
+  				<li class="list-group-item"><b>1929</b> - Kenyatta sailed from Mombasa to Britain, London.</li>
+  				<li class="list-group-item"><b>1933</b> - Worked as a linguistic informant for the Phonetics Department at University College London.</li>
+  				<li class="list-group-item"><b>1946</b> - He became the President of the Kenya African Union</li>
+  				<li class="list-group-item"><b>1952</b> - Arrested together with five senior KAU members, charged with masterminding the Mau Mau, a proscribed group.</li>
+  				<li class="list-group-item"><b>1961</b> - Released form imprisonment.</li>
+  				<li class="list-group-item"><b>1963</b> - Kenyatta was sworn in as prime minister of the autonomous Kenyan government.</li>
+  				<li class="list-group-item"><b>1964</b> - He became the president of the Republic of Kenya.</li>
+  				<li class="list-group-item"><b>1978</b> - he died of a heart attack in the State House, Mombasa.</li>
+			</ul><br>
+			<p>Jomo Kenyatta was a Kenyan anti-colonial activist and politician who governed Kenya as the first President.</p>
+		</div><br>
+
+		<p style="font-size: 18px;"><b>Read more about this incredible hero on his <a id="tribute-link" href="https://en.wikipedia.org/wiki/Jomo_Kenyatta" target="_blank">Wikipedia entry.</a></b></p>
+	</div>
+
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
