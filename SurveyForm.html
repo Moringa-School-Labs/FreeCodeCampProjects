@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Survey Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Bootstrap4 CDN-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  	<link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
+
+  	<style>
+  		body{
+  			font-family: 'Monda', sans-serif;
+  			
+
+  		}
+
+  		fieldset{
+  			display: block;
+  			border-radius: 5px;
+  		}
+  		legend{
+  			text-align: left !important;
+  			font-size: 16px !important;
+  			padding: 0 10px;
+  			font-weight: bolder;
+  			border:1px solid #ddd;
+  			border-radius: 10px;
+  		}
+
+
+  	</style>
+
+</head>
+<body>
+	<div class="container text-center">
+		<header>
+			<h1 id="title">Survey Form</h1>
+		</header>
+
+	<div class="card bg-light text-dark">
+    	<div class="card-body">
+    		<div id="description">
+    			<p>Let us know how we can improve freeCodeCamp</p>
+    		</div>
+
+    		<form id="survey-form">
+    			<fieldset class="border p-3">
+    				<legend class="w-auto">Personal Information</legend>
+    				<div class="form-group">
+    					<label for="name" id="name-label">Name:</label>
+    					<input type="text"  name="name" class="form-group" id="name" placeholder="Enter your name" required="required">
+    				</div>
+    				<div class="form-group">
+    					<label for="email" id="email-label">Email:</label>
+    					<input type="email" name="email" class="form-group" id="email" placeholder="Enter your Email" required="required">
+    				</div>
+    				<div class="form-group">
+    					<label for="age" id="number-label">Age:</label>
+    					<input type="number" name="age" class="form-group" id="number" required="required">
+    				</div>
+    			</fieldset><br>
+
+    			<fieldset class="border p-4">
+    				<legend class="w-auto">Survey Questions</legend>
+    				<div class="form-group">
+    					<label for="dropdown">1. Which option best describes your current role?</label>
+    					<select id="dropdown">
+    						<option value="0" selected="selected" disabled>Select an option</option>
+    						<option value="1">Student</option>
+    						<option value="2">Full Time Job</option>
+    						<option value="3">Full Time Learner</option>
+    						<option value="4">Prefer not to say</option>
+    						<option value="5">Other</option>
+    					</select>
+    				</div><br>
+
+    			<div class="form-group ">
+    					<label for="radio"> 2. How likely is that you would recommend freeCodeCamp to a friend?</label><br>
+    				<div class="form-check form-check-inline">
+    					<input type="radio" class="form-check-input" name="optradio"> Definitely
+    				</div>
+    				<div class="form-check form-check-inline">
+    					<input type="radio" class="form-check-input" name="optradio"> Maybe
+    				</div>
+    				<div class="form-check form-check-inline">
+    					<input type="radio" class="form-check-input" name="optradio"> Not sure
+    				</div>
+    			</div><br>
+
+    			<div class="form-group">
+    				<label for="dropdown">3. What do you like most in FCC?</label>
+    				<select id="dropdown">
+    					<option value="0" selected="selected" disabled>Select an option</option>
+    					<option value="1">Challenges</option>
+    					<option value="2">Projects</option>
+    					<option value="3">Community</option>
+    					<option value="4">Open source</option>
+    				</select>
+    			</div><br>
+
+    		<div class="form-check">
+    				<label for="checkbox">4. Things that should be improved in the future (Check all that apply):</label><br>
+    				<div class="form-check-inline">
+					  <label class="form-check-label">
+					    <input type="checkbox" class="form-check-input" value="">Front-end Projects
+					  </label>
+					</div>
+					<div class="form-check-inline">
+					  <label class="form-check-label">
+					    <input type="checkbox" class="form-check-input" value="">Back-end Projects
+					  </label>
+					</div>
+					<div class="form-check-inline">
+					  <label class="form-check-label">
+					    <input type="checkbox" class="form-check-input" value="" >Data Visualization
+					  </label>
+				</div>
+				<div class="form-check-inline">
+					  <label class="form-check-label">
+					    <input type="checkbox" class="form-check-input" value="" >Challenges
+					  </label>
+				</div>
+				<div class="form-check-inline">
+					  <label class="form-check-label">
+					    <input type="checkbox" class="form-check-input" value="" >Wiki
+					  </label>
+				</div>
+				<div class="form-check-inline">
+					  <label class="form-check-label">
+					    <input type="checkbox" class="form-check-input" value="" >Forum
+					  </label>
+				</div>
+			</div><br>
+
+			<div class="form-group">
+  				<label for="comment">Any Comments or Suggestions?</label>
+  				<textarea class="form-control" rows="5" style="width: 50%; margin: auto;" id="comment"></textarea>
+			</div>
+    	</fieldset><br>
+
+    	<div class="form-group">
+    		<button type="submit" class="btn btn-primary btn-lg">Submit</button>
+    	</div>
+    			
+    		</form>
+    	</div>
+  	</div>
+		
+
+	</div>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
