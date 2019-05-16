@@ -14,7 +14,8 @@
   	<style>
   		body{
   			font-family: 'Monda', sans-serif;
-  			
+  			background-color:  #a9d7d1;
+  			margin-top: 20px;
 
   		}
 
@@ -41,10 +42,10 @@
 			<h1 id="title">Survey Form</h1>
 		</header>
 
-	<div class="card bg-light text-dark">
+	<div class="card bg-light text-dark" style="width: 80%; margin: auto; border-radius: 10px;">
     	<div class="card-body">
-    		<div id="description">
-    			<p>Let us know how we can improve freeCodeCamp</p>
+    		<div>
+    			<p id="description">Let us know how we can improve freeCodeCamp</p>
     		</div>
 
     		<form id="survey-form">
@@ -52,53 +53,53 @@
     				<legend class="w-auto">Personal Information</legend>
     				<div class="form-group">
     					<label for="name" id="name-label">Name:</label>
-    					<input type="text"  name="name" class="form-group" id="name" placeholder="Enter your name" required="required">
+    					<input autofocus="" type="text"  name="name" class="form-group" id="name" placeholder="Enter your name" required>
     				</div>
     				<div class="form-group">
     					<label for="email" id="email-label">Email:</label>
-    					<input type="email" name="email" class="form-group" id="email" placeholder="Enter your Email" required="required">
+    					<input autofocus="" type="email" name="email" class="form-group" id="email" placeholder="Enter your Email" required>
     				</div>
     				<div class="form-group">
     					<label for="age" id="number-label">Age:</label>
-    					<input type="number" name="age" class="form-group" id="number" required="required">
+    					<input autofocus="" type="number" name="age" class="form-group" id="number" min="18" max="70" style="width: 160px;" placeholder="Enter your age" required>
     				</div>
     			</fieldset><br>
 
     			<fieldset class="border p-4">
     				<legend class="w-auto">Survey Questions</legend>
     				<div class="form-group">
-    					<label for="dropdown">1. Which option best describes your current role?</label>
-    					<select id="dropdown">
-    						<option value="0" selected="selected" disabled>Select an option</option>
-    						<option value="1">Student</option>
-    						<option value="2">Full Time Job</option>
-    						<option value="3">Full Time Learner</option>
-    						<option value="4">Prefer not to say</option>
-    						<option value="5">Other</option>
+    					<label for="dropdown" id="dropdown">1. Which option best describes your current role?</label>
+    					<select>
+    						<option value="default" selected="selected" disabled>Select an option</option>
+    						<option value="Student">Student</option>
+    						<option value="full Time Job">Full Time Job</option>
+    						<option value="Full Time Learner">Full Time Learner</option>
+    						<option value="Prefer not to say">Prefer not to say</option>
+    						<option value="Other">Other</option>
     					</select>
     				</div><br>
 
     			<div class="form-group ">
     					<label for="radio"> 2. How likely is that you would recommend freeCodeCamp to a friend?</label><br>
     				<div class="form-check form-check-inline">
-    					<input type="radio" class="form-check-input" name="optradio"> Definitely
+    					<input type="radio" class="form-check-input" name="radio-buttons" value="Definitely"> Definitely
     				</div>
     				<div class="form-check form-check-inline">
-    					<input type="radio" class="form-check-input" name="optradio"> Maybe
+    					<input type="radio" class="form-check-input" name="radio-buttons" value="Maybe"> Maybe
     				</div>
     				<div class="form-check form-check-inline">
-    					<input type="radio" class="form-check-input" name="optradio"> Not sure
+    					<input type="radio" class="form-check-input" name="radio-buttons" value="not sure"> Not sure
     				</div>
     			</div><br>
 
     			<div class="form-group">
     				<label for="dropdown">3. What do you like most in FCC?</label>
     				<select id="dropdown">
-    					<option value="0" selected="selected" disabled>Select an option</option>
-    					<option value="1">Challenges</option>
-    					<option value="2">Projects</option>
-    					<option value="3">Community</option>
-    					<option value="4">Open source</option>
+    					<option value="default" selected="selected" disabled>Select an option</option>
+    					<option value="Challenges">Challenges</option>
+    					<option value="Projects">Projects</option>
+    					<option value="Community">Community</option>
+    					<option value="Opensource">Open source</option>
     				</select>
     			</div><br>
 
@@ -106,44 +107,45 @@
     				<label for="checkbox">4. Things that should be improved in the future (Check all that apply):</label><br>
     				<div class="form-check-inline">
 					  <label class="form-check-label">
-					    <input type="checkbox" class="form-check-input" value="">Front-end Projects
+					    <input type="checkbox" class="form-check-input" value="Front-end">Front-end Projects
 					  </label>
 					</div>
 					<div class="form-check-inline">
 					  <label class="form-check-label">
-					    <input type="checkbox" class="form-check-input" value="">Back-end Projects
+					    <input type="checkbox" class="form-check-input" value="Back-end">Back-end Projects
 					  </label>
 					</div>
 					<div class="form-check-inline">
 					  <label class="form-check-label">
-					    <input type="checkbox" class="form-check-input" value="" >Data Visualization
+					    <input type="checkbox" class="form-check-input" value="data" >Data Visualization
 					  </label>
 				</div>
 				<div class="form-check-inline">
 					  <label class="form-check-label">
-					    <input type="checkbox" class="form-check-input" value="" >Challenges
+					    <input type="checkbox" class="form-check-input" value="Challenges" >Challenges
 					  </label>
 				</div>
 				<div class="form-check-inline">
 					  <label class="form-check-label">
-					    <input type="checkbox" class="form-check-input" value="" >Wiki
+					    <input type="checkbox" class="form-check-input" value="Wiki" >Wiki
 					  </label>
 				</div>
 				<div class="form-check-inline">
 					  <label class="form-check-label">
-					    <input type="checkbox" class="form-check-input" value="" >Forum
+					    <input type="checkbox" class="form-check-input" value="Forum" >Forum
 					  </label>
 				</div>
 			</div><br>
 
 			<div class="form-group">
-  				<label for="comment">Any Comments or Suggestions?</label>
-  				<textarea class="form-control" rows="5" style="width: 50%; margin: auto;" id="comment"></textarea>
+  				<label for="textarea">Any Comments or Suggestions?</label>
+  				<textarea class="form-control" rows="5" style="width: 50%; margin: auto;" id="textarea"></textarea>
+
 			</div>
     	</fieldset><br>
 
     	<div class="form-group">
-    		<button type="submit" class="btn btn-primary btn-lg">Submit</button>
+    		<button type="submit" id="submit" class="btn btn-primary btn-lg" value="submit">Submit</button>
     	</div>
     			
     		</form>
