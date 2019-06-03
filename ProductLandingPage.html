@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Product Landing Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+  	<style>
+  		body{
+  			background-color: #eee;
+  			font-family: 'Montserrat', sans-serif;
+  		}
+  		.navbar{
+  			padding: 5px 0px 25px 0px;
+  		}
+  		.navbar-brand{
+  			padding-top: 0px;
+  		}
+  		.panel{
+  			border-radius: 10px;
+  		}
+  		.panel-heading{
+  			font-weight: bold;
+  			font-size: 20px;
+  		}
+  		ul{
+  			list-style-type: none;
+  			line-height: 30px;
+  		}
+  		footer{
+  			background-color: #f8f8f8;
+  			padding: 20px;
+  		}
+  		h3{
+  			color: #5cb85c;
+  		}
+  		h3:hover{
+  			text-decoration: underline;
+  			color: #5cb85c;
+  		}
+  		img{
+  			display: flex;
+  		}
+  		@media only screen and(max-width: 600px){
+  			body{
+  				background-color: #fff;
+  			}
+  		}
+  		
+  	</style>
+
+</head>
+<body>
+	<header id="header">
+			<nav class="navbar navbar-default navbar-fixed-top" id="nav-bar">
+			  <div class="container">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>                        
+			      </button>
+			      <a class="navbar-brand" href="#home">
+			      	<img id="header-img" src= "http://www.userlogos.org/files/logos/Jayson%20Wills/Name.com.png" alt="Logo" width="200" height="80" >
+			      </a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="myNavbar">
+			      <ul class="nav navbar-nav navbar-right">
+			        <li>
+			        	<a class="nav-link" href="#home">Home</a>
+			        </li>
+			        <li>
+			        	<a class="nav-link" href="#features">Features</a>
+			        </li>
+			        <li>
+			        	<a class="nav-link" href="#process">Hosting process</a>
+			        </li>
+			        <li>
+			        	<a class="nav-link" href="#pricing">Pricing</a>
+			        </li>
+			      </ul>
+			    </div>
+			  </div>
+			</nav>	
+		</header>
+
+		<div class="container text-center" id="home" style="margin-top: 100px;"> 
+			<h4>Don't have hosting website yet? Get started!</h4><br>
+			<form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
+				<input type="email" name="email" id="email" placeholder="Enter your email address" required="required" style="width: 30%; height: 35px; border-radius: 5px;"><br><br>
+				<input id="submit" class="btn btn-success" type="submit" value="Get Started" style="width: 15%;">
+			</form>
+		</div><br><br>
+
+		<div class="container" id="features">
+			<h3 class="text-center">Hosting Plan Features</h3><br>
+			<div class="row">
+				<div class="col-md-4"> 
+					<p><a href="#"><span class="glyphicon glyphicon-check" style="font-size: 20px; color: #5cb85c;"></span></a> 500 GB Disc Space</p>
+      			</div>
+
+				<div class="col-md-4">
+					<p><a href="#"><span class="glyphicon glyphicon-envelope" style="font-size: 20px; color: #5cb85c;"></span></a> 1000 Email Accounts</p>
+				</div>
+				<div class="col-md-4">
+					<p><a href="#"><span class="glyphicon glyphicon-wrench" style="font-size: 20px; color: #5cb85c;"></span></a> Best Support in the industry</p>
+				</div>
+			</div><br><br>
+ 
+			<div class="row">
+				<div class="col-md-4">
+					<p><a href="#"><span class="glyphicon glyphicon-circle-arrow-right" style="font-size: 20px; color: #5cb85c;"></span></a> Unlimited Data Transfer</p>
+				</div>
+				<div class="col-md-4">
+					<p><a href="#"><span class="glyphicon glyphicon-star" style="font-size: 20px; color: #5cb85c;"></span></a> Free Domain Name</p>
+				</div>
+				<div class="col-md-4">
+					<p><a href="#"><span class="glyphicon glyphicon-star-empty" style="font-size: 30px; color: #5cb85c;"></span></a> Unlimited Domain Hosting</p>
+				</div>
+			</div><br><br>
+
+			<div class="row">
+				<div class="col-md-4">
+					<p><a href="#"><span class="glyphicon glyphicon-cloud" style="font-size: 20px; color: #5cb85c;"></span></a> SSL, FTP, Stats</p>
+				</div>
+				<div class="col-md-4">
+					<p><a href="#"><span class="glyphicon glyphicon-heart" style="font-size: 20px; color: #5cb85c;"></span></a> Free Site Builders</p>
+				</div>
+				<div class="col-md-4">
+					<p><a href="#"><span class="glyphicon glyphicon-link" style="font-size: 20px; color: #5cb85c;"></span></a> CGI, Ruby, Perl, PHP, MySQL</p>
+				</div>
+			</div>
+		</div><br>
+
+
+		<div class="container text-center" id="process">
+			<h3>Hosting Process</h3>
+			<video width="60%" height="450" id="video" controls>
+			  <source src="images/hosting.mp4" type="video/mp4">
+			  <source src="images/hosting.ogg" type="video/ogg">
+			Your browser does not support the video tag.
+			</video>
+		</div><br>
+
+
+		<div class="container text-center" id="pricing">
+			<h3>Pricing</h3><br>
+			<div class="row">
+				<div class="col-md-4">
+					  <div class="panel panel-success">
+					    <div class="panel-heading">Small</div>
+					    <div class="panel-body">
+					    	<ul>
+					    		<li>300 GB Disk space</li>
+					    		<li>3000 GB Data Transfer</li>
+					    		<li>25 FTP Accounts</li>
+					    		<li>1000 Email Boxes</li>
+					    		<li>Unlimited Bandwidth</li>
+					    		<li>Free DomainS</li>
+					    		<li>Free Site Builder</li>
+					    	</ul>
+					    </div>
+					    <div class="panel-footer">
+					    	<h4>$9.95/month</h4>
+					    	<button type="button" class="btn btn-success">Sign Up Now</button>
+					    </div>
+					  </div>
+				</div>
+				<div class="col-md-4">
+					  <div class="panel panel-success">
+					    <div class="panel-heading">Medium</div>
+					    <div class="panel-body">
+					    	<ul>
+					    		<li>500 GB Disk Space</li>
+					    		<li>5000 GB Data Transfer</li>
+					    		<li>50 FTP Accounts</li>
+					    		<li>1000 Email Boxes</li>
+					    		<li>Unlimited Bandwidth</li>
+					    		<li>Free Domains</li>
+					    		<li>Free Site Builder</li>
+					    	</ul>
+					    </div>
+					    <div class="panel-footer">
+					    	<h4>$14.95/month</h4>
+					    	<button type="button" class="btn btn-success">Sign Up Now</button>
+					    </div>
+					  </div>
+				</div>
+				<div class="col-md-4">
+					  <div class="panel panel-success">
+					    <div class="panel-heading">Unlimited</div>
+					    <div class="panel-body">
+					    	<ul>
+					    		<li>Unlimited Disk Space</li>
+					    		<li>Unlimited Data Transfer</li>
+					    		<li>Unlimited FTP Accounts</li>
+					    		<li>Unlimited Email Boxes</li>
+					    		<li>Unlimited Bandwidth</li>
+					    		<li>Free Domains</li>
+					    		<li>Free Site Builder</li>
+					    	</ul>
+					    </div>
+					    <div class="panel-footer">
+					    	<h4>$19.95/month</h4>
+					    	<button type="button" class="btn btn-success">Sign Up Now</button>
+					    </div>
+					  </div>
+				</div>
+			</div>
+		</div>
+	
+	<div class="container text-center">
+		<footer>
+			<p>Copyright 2019. All Rights Reserved </p>
+			<p>Designed by webmaster.com</p>
+		</footer>
+		
+	</div>
+
+
+
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
